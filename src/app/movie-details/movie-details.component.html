@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="w-100 p-3" [src]="imgPrefix+details.poster_path" alt="">
+        </div>
+    
+        <div class="col-md-8 d-flex align-items-center ">
+            <div class="item">
+                <h2 class="mb-4">{{details.original_title}}</h2>
+            <p>{{details.overview}}</p>
+    
+            <ul>
+                <li>origin country: {{details.production_companies[0].origin_country}}</li>
+                <li>budget: {{details.budget}}</li>
+                <li>vote average: {{details.vote_average}}</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
