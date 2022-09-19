@@ -1,0 +1,60 @@
+.rate {
+    position: absolute;
+    top:0px;
+    right: 0px;
+    font-size: 24px;
+    background-color: rgb(151, 23, 23) !important;
+    padding: 5px;
+    transition: all 0.4s ease;  
+}
+.poster{
+    width:100%;
+    transition: all 0.4s ease; 
+}
+
+.photoLink:hover{
+    .movie-title{
+        color:rgb(151, 23, 23) !important;
+    }    
+
+    .rate{
+        padding: 8px;
+        font-size: 28px;
+    }
+    .poster{
+        transform: scale(1.1)rotate(5deg);
+    }
+
+}
+.movie-title{
+    transition: all 0.4s ease;  
+}
+
+.search {
+    background-color: rgb(114, 114, 114);
+    width: 50%;
+    border-radius: 30px;
+    padding: 10px;
+    input{
+        outline: none;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        color: white;
+    }
+}
+::placeholder{
+    color: white;
+}
+
+
+.page-active {
+    background-color: rgb(151, 23, 23) !important;
+}
+
+.page-item:hover{
+    .page-active {
+    background-color: rgb(38, 0, 0) !important;
+    color: white !important;
+    }
+}

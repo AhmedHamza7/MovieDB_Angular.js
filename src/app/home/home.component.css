@@ -1,0 +1,48 @@
+header {
+  background-image: url(../../assets/header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header img {
+  transition: all 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.movie-title {
+  transition: all 0.4s ease;
+  color: rgb(255, 255, 255) !important;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.photoLink:hover .movie-title {
+  color: rgb(151, 23, 23) !important;
+}
+
+.overlay p {
+  padding: 5px;
+  background-color: rgb(151, 23, 23) !important;
+  color: white;
+  border-bottom-right-radius: 15px;
+}
+
+.overlay .details {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}/*# sourceMappingURL=home.component.css.map */

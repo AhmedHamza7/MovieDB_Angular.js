@@ -30,7 +30,7 @@
             </div>
         </div>
         <div *ngFor="let movie of trendingMovies" class="col-md-2">
-            <a [routerLink]="['/movieDetails', movie.id]" class="">
+            <a [routerLink]="['/movieDetails', movie.id]" class="photoLink">
                 <div class="item position-relative">
                     <img [src]="imgPrefix+movie.poster_path" class="w-100 mb-2" alt="">
                     <div class="overlay d-flex justify-content-end align-items-start">
@@ -38,7 +38,7 @@
                         <p class="details text-center align-self-center">Click for more details</p>
                     </div>
                 </div>
-                <h3 class="h4 text-center mb-4">{{movie.title}}</h3>
+                <h3 class="movie-title h4 text-center mb-4">{{movie.title}}</h3>
             </a>
 
             
@@ -55,7 +55,7 @@
             
         </div>
         <div *ngFor="let movie of trendingTv" class="col-md-2">
-            <a [routerLink]="['/movieDetails', movie.id]">
+            <a [routerLink]="['/movieDetails', movie.id]" class="photoLink">
                 <div class="item position-relative">
                     <img [src]="imgPrefix+movie.poster_path" class="w-100 mb-2" alt="">
                     <div class="overlay d-flex justify-content-end align-items-start">
@@ -64,7 +64,7 @@
                     </div>
                     
                 </div>
-                <h3 class="h4 text-center mb-4">{{movie.name}}</h3>
+                <h3 class="movie-title h4 text-center mb-4">{{movie.name}}</h3>
 
             </a>
         </div>

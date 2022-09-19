@@ -18,8 +18,9 @@ export class HomeComponent implements OnInit {
     pullDrag: false,
     dots:false,
     dotsEach: false,
-    navSpeed: 700,
-    navText: ['', ''],
+    navSpeed: 1000,
+    nav:true,
+    navText: ['Prev','Next'],
     responsive: {
       0: {
         items: 1
@@ -34,7 +35,6 @@ export class HomeComponent implements OnInit {
         items: 6
       }
     },
-    nav: true
   }
 
   trendingMovies:any[] = [];

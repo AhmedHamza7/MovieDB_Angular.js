@@ -1,19 +1,38 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <img class="w-100 p-3" [src]="imgPrefix+details.poster_path" alt="">
-        </div>
-    
-        <div class="col-md-8 d-flex align-items-center ">
-            <div class="item">
-                <h2 class="mb-4">{{details.original_title}}</h2>
-            <p>{{details.overview}}</p>
-    
-            <ul>
-                <li>origin country: {{details.production_companies[0].origin_country}}</li>
-                <li>budget: {{details.budget}}</li>
-                <li>vote average: {{details.vote_average}}</li>
-            </ul>
+<div class="content vh-100" [ngStyle]="{'background-image':'url('+ imgPrefix+details.poster_path +')'}">
+    <div class="content-overlay vh-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="w-100 p-3" [src]="imgPrefix+details.poster_path" alt="">
+                </div>
+            
+                <div class="col-md-8 d-flex align-items-center ">
+                    <div class="item">
+                        <h2 class="mb-4">{{details.title || details.name}}</h2>
+
+                        <ul  class="genres">
+                            <li class="mx-2" *ngFor="let genre of details.genres">
+                                {{genre.name}}
+                            </li>
+                        </ul>
+                    <p class="fs-4">{{details.overview}}</p>
+            
+                    <ul>
+                        <li class="my-1 fw-bold">origin country : {{details.production_companies[0].origin_country}}</li>
+                        <li class="my-1 fw-bold">Release date : {{details.release_date}}</li>
+                        <li class="my-1 fw-bold">vote average : {{details.vote_average}}</li>
+                    </ul>
+
+                    <div class="website d-flex justify-content-center align-items-centermt-5">
+                        <a [href]="details.homepage" target="_blank">
+                            <button class="fs-4">{{details.title || details.name}} Website <i class="fa-solid fa-angles-right fa-bounce fa-1x mx-2"></i></button>
+                        </a>
+                    </div>
+
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>

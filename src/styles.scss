@@ -20,6 +20,9 @@ nav a:hover{
     color:rgb(151, 23, 23) !important
 }
 
+.pointer{
+    cursor: pointer;
+}
 i{
     transition: all 0.3s ease;
     cursor: pointer;
@@ -32,4 +35,24 @@ nav i:hover {
 ul{
     text-decoration: none;
     list-style-type: none;
+}
+
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #550000;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.card{
+    background-color: #0e0000 !important;
+    box-shadow: 1px 0px 2px #4300007b,
+                1px 0px 1px #31000093
+    ;
 }
