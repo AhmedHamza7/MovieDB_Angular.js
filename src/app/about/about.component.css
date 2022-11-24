@@ -1,1 +1,7 @@
-/*# sourceMappingURL=about.component.css.map */
+.items {
+  background: linear-gradient(to right, rgba(151, 23, 23, 0.581), rgba(73, 0, 0, 0.608));
+  border-radius: 50px;
+}
+.items .myImg img {
+  border-radius: 50%;
+}/*# sourceMappingURL=about.component.css.map */
