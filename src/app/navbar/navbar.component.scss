@@ -5,3 +5,21 @@
 h1 span {
     color: rgb(151, 23, 23);
 }
+
+nav {
+    z-index: 999999;
+}
+@media (max-width:992px) {
+    .navbar-collapse ,.contact-div{
+        flex-wrap: wrap !important; 
+    }
+    ul {
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: end;
+    }
+    ul li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

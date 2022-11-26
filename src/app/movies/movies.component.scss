@@ -47,7 +47,11 @@
     color: white;
 }
 
-
+@media (max-width:992px) {
+    .search {
+        width:100%;
+    }
+}
 
 .page-active {
     background-color: rgb(151, 23, 23) !important;

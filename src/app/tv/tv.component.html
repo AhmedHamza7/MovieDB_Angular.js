@@ -7,7 +7,7 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-md-2 mb-5 " *ngFor="let movie of allMovies | searchTv:term">
+        <div class="col-xl-2 col-md-4 col-sm-6 mb-5 " *ngFor="let movie of allMovies | searchTv:term">
             <div class="item ">
                 <a [routerLink]="['/movieDetails', movie.id]" class="photoLink ">
                     <div class="img position-relative overflow-hidden">

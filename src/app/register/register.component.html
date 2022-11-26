@@ -2,7 +2,7 @@
     <form [formGroup]= "registerForm" (ngSubmit)="submitRegister()">
 
         <div *ngIf="errMsg" class="alert alert-danger">{{errMsg}}</div>
-        <label for="first_name" >first_name</label>
+        <label for="first_name" >First name</label>
         <input type="text" id="first_name" class="form-control" formControlName="first_name">
         <div *ngIf="registerForm.get('first_name')?.errors && registerForm.get('first_name')?.touched"  class="alert alert-danger">
             <p *ngIf="registerForm.get('first_name')?.getError('required')" class="mb-0">First Name is required</p>
@@ -12,7 +12,7 @@
     
     
     
-        <label for="last_name" >last_name</label>
+        <label for="last_name" >Last name</label>
         <input type="text" id="last_name" class="form-control" formControlName="last_name">
         <div *ngIf="registerForm.get('last_name')?.errors && registerForm.get('last_name')?.touched " class="alert alert-danger">
             <p *ngIf="registerForm.get('last_name')?.getError('required')" class="mb-0">last Name is required</p>
@@ -34,7 +34,7 @@
         <label for="password">password</label>
     
         <input type="password" id="password" class="form-control" formControlName="password">
-    
+        <p class="mt-2 text-warning"><span class="fw-bold">*Note: </span>Password must start with 3 - 5 characters.</p>
         <div *ngIf="registerForm.get('password')?.errors && registerForm.get('password')?.touched" class="alert alert-danger">
     
             <p *ngIf="registerForm.get('password')?.getError('required')" class="mb-0">Password is required</p>

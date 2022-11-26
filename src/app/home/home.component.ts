@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     navText: ['Prev','Next'],
     responsive: {
       0: {
-        items: 1
+        items: 2
       },
       400: {
         items: 2

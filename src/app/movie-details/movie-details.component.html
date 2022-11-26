@@ -1,4 +1,4 @@
-<div class="content vh-100" [ngStyle]="{'background-image':'url('+ imgPrefix+details.poster_path +')'}">
+<div class="content vh-100 " [ngStyle]="{'background-image':'url('+ imgPrefix+details.poster_path +')'}">
     <div class="content-overlay vh-100">
         <div class="container">
             <div class="row">
@@ -11,7 +11,7 @@
                         <h2 class="mb-4">{{details.title || details.name}}</h2>
 
                         <ul  class="genres">
-                            <li class="mx-2" *ngFor="let genre of details.genres">
+                            <li class="mx-2 mb-2" *ngFor="let genre of details.genres">
                                 {{genre.name}}
                             </li>
                         </ul>
@@ -23,7 +23,7 @@
                         <li class="my-1 fw-bold">vote average : {{details.vote_average}}</li>
                     </ul>
 
-                    <div class="website d-flex justify-content-center align-items-centermt-5">
+                    <div class="website d-flex justify-content-center align-items-center my-5">
                         <a [href]="details.homepage" target="_blank">
                             <button class="fs-4">{{details.title || details.name}} Website <i class="fa-solid fa-angles-right fa-bounce fa-1x mx-2"></i></button>
                         </a>

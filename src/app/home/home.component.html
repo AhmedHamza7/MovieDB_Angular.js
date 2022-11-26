@@ -5,7 +5,7 @@
         <ng-container *ngFor="let movie of trendingTv" class="position-relative">
           <ng-template carouselSlide [id]="movie.id" class="item position-relative">
             <img class="w-100" [src]="imgPrefix+movie.poster_path" [title]="movie.title">
-            <div class="overlay d-flex justify-content-end align-items-start">
+            <div class="overlay d-flex justify-content-end align-items-start" [routerLink]="['/movieDetails', movie.id]">
                 <p class="fs-4">{{movie.vote_average | number:'1.0-1'}}</p>
             </div>
           </ng-template>
@@ -28,7 +28,7 @@
                 <h3 class="animate-charcter">Trending Movies</h3>
             </div>
         </div>
-        <div *ngFor="let movie of trendingMovies" class="col-md-2">
+        <div *ngFor="let movie of trendingMovies" class="col-xl-2 col-md-4 col-sm-6">
             <a [routerLink]="['/movieDetails', movie.id]" class="photoLink">
                 <div class="item position-relative">
                     <img [src]="imgPrefix+movie.poster_path" class="w-100 mb-2" alt="">
@@ -51,7 +51,7 @@
                 <h3 class="animate-charcter">Trending Series</h3>
             </div>
         </div>
-        <div *ngFor="let movie of trendingTv" class="col-md-2">
+        <div *ngFor="let movie of trendingTv" class="col-xl-2 col-md-4 col-sm-6">
             <a [routerLink]="['/movieDetails', movie.id]" class="photoLink">
                 <div class="item position-relative">
                     <img [src]="imgPrefix+movie.poster_path" class="w-100 mb-2" alt="">
@@ -74,7 +74,7 @@
             </div>
             
         </div>
-        <div *ngFor="let person of trendingPerson" class="col-md-2">
+        <div *ngFor="let person of trendingPerson" class="col-xl-2 col-md-4 col-sm-6">
             <div class="item">
                 <img [src]="person.profile_path" class="w-100 mb-2" alt="">
                 <h3 class="h4 text-center mb-4">{{person.name}}</h3>
