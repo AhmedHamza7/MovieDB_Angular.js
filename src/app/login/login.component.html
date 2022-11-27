@@ -24,11 +24,14 @@
     
     
     
-        <button class="btn btn-info" type="submit" [disabled]="loginForm.invalid">
+        <button class="btn btn-danger" type="submit" [disabled]="loginForm.invalid">
             <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
             login
         </button>
     
     </form>
     
+    <div class="to-register mt-2">
+        <p>Don't have an account ? <a class="text-danger" routerLink="/register">Register</a></p>
+    </div>
 </div>

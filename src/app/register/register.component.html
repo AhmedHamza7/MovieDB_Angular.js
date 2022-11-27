@@ -54,10 +54,14 @@
             <p *ngIf="registerForm.get('age')?.getError('max')" class="mb-0">max age is 36</p>
         </div>
     
-        <button class="btn btn-info" type="submit" [disabled]="registerForm.invalid">
+        <button class="btn btn-danger" type="submit" [disabled]="registerForm.invalid">
             <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
             register
         </button>
     
     </form>
+
+    <div class="to-login mt-2">
+        <p>have an account ? <a class="text-danger" routerLink="/login">Login</a></p>
+    </div>
 </div>
