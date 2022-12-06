@@ -6,7 +6,7 @@
           <ng-template carouselSlide [id]="movie.id" class="item position-relative">
             <img class="w-100" [src]="imgPrefix+movie.poster_path" [title]="movie.title">
             <div class="overlay d-flex justify-content-end align-items-start" [routerLink]="['/movieDetails', movie.id]">
-                <p class="fs-4">{{movie.vote_average | number:'1.0-1'}}</p>
+                <p class="fs-4 rate">{{movie.vote_average | number:'1.0-1'}}</p>
             </div>
           </ng-template>
 
@@ -32,8 +32,8 @@
             <a [routerLink]="['/movieDetails', movie.id]" class="photoLink">
                 <div class="item position-relative">
                     <img [src]="imgPrefix+movie.poster_path" class="w-100 mb-2" alt="">
-                    <div class="overlay d-flex justify-content-end align-items-start">
-                        <p class="fs-4">{{movie.vote_average | number:'1.0-1'}}</p>
+                    <div class="overlay d-flex justify-content-end ">
+                        <p class="fs-4 rate">{{movie.vote_average | number:'1.0-1'}}</p>
                         <p class="details text-center align-self-center">Click for more details</p>
                     </div>
                 </div>

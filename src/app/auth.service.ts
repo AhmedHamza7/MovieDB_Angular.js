@@ -26,11 +26,11 @@ export class AuthService {
     this.userData.next(decodedData)
   }
   signup(registerData:object):Observable<any>{
-    return this._HttpClient.post('https://route-egypt-api.herokuapp.com/signup', registerData)
+    return this._HttpClient.post('https://route-movies-api.vercel.app/signup', registerData)
   }
 
   login(registerData:object):Observable<any>{
-    return this._HttpClient.post('https://route-egypt-api.herokuapp.com/signin', registerData)
+    return this._HttpClient.post('https://route-movies-api.vercel.app/signin', registerData)
   }
 
 

@@ -21,6 +21,11 @@
   padding: 0;
 }
 
+@media (max-width: 992px) {
+  .content-overlay {
+    background-color: rgba(0, 0, 0, 0.641) !important;
+  }
+}
 .website a button {
   background: linear-gradient(to right, rgb(151, 23, 23), rgb(73, 0, 0));
   color: white;

@@ -46,7 +46,7 @@ import { SearchTvPipe } from './search-tv.pipe'
     ReactiveFormsModule,
     HttpClientModule,
     CarouselModule,
-    
+    BrowserAnimationsModule
     
   ],
   providers: [],

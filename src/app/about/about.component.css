@@ -4,4 +4,13 @@
 }
 .items .myImg img {
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .aboutInfo {
+    flex-wrap: wrap;
+  }
+  .left, .right, ul, li {
+    width: 100%;
+  }
 }/*# sourceMappingURL=about.component.css.map */
